@@ -48,5 +48,3 @@ Then open `index.html` in your browser.
 ## 📄 License
 
 This project is for personal use. Feel free to explore or use for reference.
-
-If this still doesn’t render properly, just tell me what it looks like (or screenshot it), and I’ll fix it.
