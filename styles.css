@@ -32,6 +32,16 @@
   --color-error: #dc2626;
 }
 
+[data-theme="dark"] {
+  --color-bg: #0f172a;
+  --color-bg-alt: #020617;
+
+  --color-text: #e5e7eb;
+  --color-text-muted: #94a3b8;
+
+  --color-border: #1e293b;
+}
+
 *,
 *::before,
 *::after {
