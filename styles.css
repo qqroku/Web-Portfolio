@@ -1,0 +1,95 @@
+:root {
+  /* ========== Brand / Accent ========== */
+  --color-primary: #2563eb; /* main accent (links, CTA) */
+  --color-primary-hover: #1d4ed8;
+  --color-primary-soft: #dbeafe; /* subtle backgrounds */
+
+  /* ========== Backgrounds ========== */
+  --color-bg: #ffffff; /* page background */
+  --color-bg-alt: #f9fafb; /* sections, cards */
+  --color-bg-muted: #f3f4f6; /* separators */
+
+  /* ========== Text ========== */
+  --color-text: #111827; /* main text */
+  --color-text-muted: #6b7280; /* secondary text */
+
+  /* ========== Borders ========== */
+  --color-border: #e5e7eb;
+  --color-border-focus: #2563eb;
+
+  /* ========== Links ========== */
+  --color-link: var(--color-primary);
+  --color-link-hover: var(--color-primary-hover);
+
+  /* ========== Buttons ========== */
+  --btn-bg: var(--color-primary);
+  --btn-bg-hover: var(--color-primary-hover);
+  --btn-text: #ffffff;
+
+  /* ========== States ========== */
+  --color-success: #16a34a;
+  --color-warning: #f59e0b;
+  --color-error: #dc2626;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg);
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: var(--color-bg-alt);
+  box-shadow: 0, 1px, 5px var(--color-shadow);
+}
+
+.nav__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1rem 2.5rem;
+}
+
+.nav__container-logo {
+  text-decoration: none;
+  font-size: 1rem;
+  color: var(--color-text);
+}
+
+.nav__container-lists {
+  background-color: var(--color-bg-alt);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  list-style: none;
+}
+
+.nav__container-link {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--color-text);
+}
+
+.nav__container-link::after {
+  content: "";
+  background: none;
+  border: none;
+}
